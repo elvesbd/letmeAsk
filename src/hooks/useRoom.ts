@@ -33,6 +33,7 @@ export default function useRoom(roomId: string) {
   const { user } = useAuth();
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [title, setTitle] = useState('');
+  const [id, setId] = useState('');
 
   useEffect(() => {
     const roomRef = database.ref(`rooms/${roomId}`);
@@ -52,6 +53,7 @@ export default function useRoom(roomId: string) {
           likeId: Object.entries(value.likes ?? {}).find(([key, like]) => like.authorId === user?.id)?.[0]
         }
       });
+      setId(databaseRoom.id);
       setTitle(databaseRoom.title);
       setQuestions(parsedQuestions);
     });
@@ -63,6 +65,6 @@ export default function useRoom(roomId: string) {
 
 
   return (
-    { questions, title }
+    { questions, title, id }
   );
 };
