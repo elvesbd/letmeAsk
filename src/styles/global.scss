@@ -12,3 +12,23 @@ body {
 body, input, button, textarea {
   font: 400 16px 'Roboto', sans-serif;
 }
+
+.react-modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.react-modal-content {
+  width: 100%;
+  max-width: 590px;
+  background: #f8f8f8;
+  padding: 48px;
+  border-radius: 4px;
+}
