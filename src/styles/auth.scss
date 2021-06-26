@@ -131,3 +131,13 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  #page-auth aside {
+    display: none;
+  }
+
+  #page-auth main {
+    flex: 1;
+  }
+}

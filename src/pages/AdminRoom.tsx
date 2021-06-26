@@ -12,11 +12,11 @@ import Question from '../components/Question';
 import RoomCode from '../components/RoomCode';
 
 import useRoom from '../hooks/useRoom';
+import ConfirmDeletedModal from '../components/ConfirmDeletedModal';
 
 import { database } from '../services/firebase';
 
 import '../styles/room.scss';
-import ConfirmDeletedModal from '../components/ConfirmDeletedModal';
 
 type RoomParams = {
   id: string;

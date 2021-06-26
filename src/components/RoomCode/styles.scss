@@ -29,3 +29,11 @@
     overflow: hidden;
   }
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .room-code {
+    span {
+      max-width: 280px;
+    }
+  }
+}

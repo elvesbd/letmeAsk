@@ -110,3 +110,39 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  #page-room {
+    .content {
+      flex-direction: column;
+      
+      > img {
+        margin-bottom: 16px;
+      }
+
+      > div {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+
+    main {
+      .room-title {
+        justify-content: space-between;
+        margin: 32px 12px 24px;
+
+        h1 {
+          font-size: 16px;
+        }
+      }
+
+      form {
+        margin: 0 16px;
+      }
+
+      .question-list {
+        margin: 32px 16px;
+      }
+    }
+  }
+}
